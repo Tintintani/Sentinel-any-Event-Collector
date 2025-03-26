@@ -1,0 +1,23 @@
+{
+    "dependencies": {
+        "@azure/identity": "^4.8.0",
+        "@azure/monitor-ingestion": "^1.1.0",
+        "@hono/node-server": "^1.14.0",
+        "dotenv": "^16.4.7",
+        "hono": "^4.7.5",
+        "jose": "^6.0.10",
+        "pino": "^9.6.0",
+        "pino-pretty": "^13.0.0",
+        "zod": "^3.24.2"
+    },
+    "scripts": {
+        "start": "tsx ./main.ts | npx pino-pretty",
+        "devtunnel": "devtunnel host -p 3000 --allow-anonymous --host-header unchanged"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.12",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.19.3",
+        "typescript": "^5.8.2"
+    }
+}
